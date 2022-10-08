@@ -6,6 +6,7 @@
   --second-background: #2f303a;
   --boxes-color: #eeeeee;
   --filter-color: #f5f4fa;
+  --address-color: rgba(255, 255, 255, 0.6);
   --famili-fontsize: "Roboto", sans-serif;
   --logo-fontsize: "Raleway", sans-serif;
 }
@@ -13,13 +14,11 @@ body {
   color: var(--color-text);
   background-color: var(--primery-background);
   font-family: var(--famili-fontsize);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 .link:hover,
 .link:focus {
@@ -50,7 +49,7 @@ body {
 }
 
 /* Header */
-.header-nav-item {
+.header-nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -66,7 +65,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--color-text-secohd);
 }
 
 /* Hero */
@@ -95,6 +94,10 @@ body {
   background: var(--color-text-logo);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
 
 /* Features */
 .visually-hidden {
@@ -121,7 +124,6 @@ body {
   color: var(--color-text);
 }
 .features-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -144,6 +146,9 @@ body {
 .team {
   background: var(--filter-color);
 }
+.team-card {
+    background-color: var(--primery-background);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -161,7 +166,6 @@ body {
   color: var(--color-text);
 }
 .team-subtitle {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -170,6 +174,9 @@ body {
 }
 
 /* Footer */
+address {
+    font-style: normal;
+}
 .address-text {
   font-weight: 400;
   font-size: 14px;
@@ -182,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
 }
 
 /* Portfolio */
@@ -194,12 +201,15 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--color-text);
   background-color: var(--filter-color);
 }
 .button:hover,
 .button:focus {
   color: var(--primery-background);
   background-color: var(--color-text-logo);
+}
+.project {;
 }
 .project-title {
   font-weight: 700;
@@ -209,7 +219,6 @@ body {
   color: var(--color-text);
 }
 .project-subtitle {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
