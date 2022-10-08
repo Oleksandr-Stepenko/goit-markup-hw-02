@@ -21,8 +21,9 @@ body {
   text-decoration: none;
   font-style: normal;
 }
-.link:hover, .link:focus {
-    color: var(--color-text-logo);
+.link:hover,
+.link:focus {
+  color: var(--color-text-logo);
 }
 .list {
   list-style: none;
@@ -58,7 +59,7 @@ body {
 }
 
 .nav-list .link.current {
-    color: var(--color-text-logo);
+  color: var(--color-text-logo);
 }
 .link-contacts {
   font-weight: 500;
@@ -69,7 +70,7 @@ body {
 }
 
 /* Hero */
-.background {
+.section {
   background-color: var(--second-background);
 }
 
@@ -151,7 +152,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
-.subject {
+.team-subject {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -159,7 +160,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-text);
 }
-.subtitle {
+.team-subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -184,21 +185,33 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* font-family: inherit */
-
 /* Portfolio */
 .button {
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    background-color: var(--filter-color)
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--filter-color);
 }
 .button:hover,
 .button:focus {
-    color: var(--primery-background);
-    background-color: var(--color-text-logo);
+  color: var(--primery-background);
+  background-color: var(--color-text-logo);
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-text);
+}
+.project-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secohd);
 }
